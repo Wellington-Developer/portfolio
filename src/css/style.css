@@ -1,0 +1,11 @@
+/*
+    IMPORT GLOBAL CONTENT
+*/
+@import './global/global.css';
+
+
+/*
+    IMPORT UTILS
+*/
+@import './utilidades/cores.css';
+@import './utilidades/tipografia.css';
