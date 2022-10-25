@@ -38,7 +38,7 @@
 }
 
 .list ul li {
-  padding-bottom: 24px;
+  padding-bottom: 18px;
   display: flex;
   align-items: center;
 }
@@ -58,6 +58,10 @@
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   background: var(--color-c11);
   border-radius: 4px;
@@ -88,6 +92,7 @@
   text-align: center;
   padding-bottom: 24px;
   font-weight: 500;
+  max-width: 250px;
 }
 
 .box p {

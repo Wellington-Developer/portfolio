@@ -20,7 +20,7 @@ export const Work = () => {
 
       <div class="box-container">
         <div class="box">
-          <h1 class="font-1-xxs">Desenvolvimento Front-End</h1>
+          <h1 class="font-1-xxs">Front-End Development</h1>
           <p class="font-1-s">
             Desenvolvimento sem templates ou modelos prontos. Garantindo a qualidade e atenção aos detalhes da interface.
           </p>
