@@ -51,7 +51,6 @@
   grid-area: boxes;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 
@@ -131,5 +130,9 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 60px;
+  }
+
+  .box-container {
+    flex-wrap: wrap;
   }
 }
