@@ -50,7 +50,7 @@
 }
 
 .project-bg {
-  background: linear-gradient(to right, var(--color-white) 20%, var(--color-c11) 0%);
+  background: linear-gradient(to right, #fff 20%, var(--color-c11) 0%);
 }
 
 .project-bg h3 {
