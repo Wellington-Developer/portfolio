@@ -2,22 +2,7 @@ import { Button } from "../utilidades/Button"
 import imgIntro from '../../img/introducao.jpg'
 import './Home.css'
 
-import { useRef, useEffect } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 export const Home = () => {
-  let home = useRef(null)
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to('.square', {
-      x: 1000,
-      duration: 1,
-      ScrollTrigger: ".square"
-    })
-  }, [])
 
   return (
     <section>
@@ -35,7 +20,6 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="square" ref={home}></div>
     </section>
   )
 }
