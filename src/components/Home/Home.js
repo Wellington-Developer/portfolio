@@ -15,7 +15,7 @@ export const Home = () => {
 
   return (
     <section>
-      <div className="home-container" ref={home}>
+      <div className="home-container" >
         <div className="home-content">
           <div className="home-left-section">
             <span className="font-2-l">Eae 🤘🏻</span>
@@ -24,7 +24,7 @@ export const Home = () => {
             <Button text={"CONTATE-ME"}/>
           </div>
           <div className="home-right-section">
-            <img src={imgIntro} alt="Imagem de código" />
+            <img src={imgIntro} alt="Imagem de código" ref={home}/>
           </div>
         </div>
       </div>
