@@ -4,9 +4,9 @@ import './Header.css'
 export const Header = () => {
   return (
     <header>
-      <div class="header-container">
-        <div class="header-content">
-          <div class="header-logo">
+      <div className="header-container">
+        <div className="header-content">
+          <div className="header-logo">
             <img src={logoImg} alt="Logotipo"/>
           </div>
         </div>
