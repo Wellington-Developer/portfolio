@@ -5,13 +5,13 @@ import './Home.css'
 import { useRef, useEffect } from 'react'
 import { gsap, Power2 } from 'gsap'
 
-export const Home = () => {
+export const Home = ({timeline}) => {
   let home = useRef(null)
 
   useEffect(() => {
-    gsap.fromTo(home.current, 0.1, {width: '0%', opacity: 0},
+    gsap.fromTo(home.current, 1, {width: '0%', opacity: 0},
       {width: '100%', opacity: 1, ease: Power2})
-  }, [])
+  }, [timeline])
 
   return (
     <section>
