@@ -8,6 +8,7 @@ export const Header = () => {
         <div className="header-content">
           <div className="header-logo">
             <img src={logoImg} alt="Logotipo"/>
+            <h1>WFRONT</h1>
           </div>
         </div>
       </div>
