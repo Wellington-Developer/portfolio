@@ -49,6 +49,12 @@
   padding-left: 28px;
 }
 
+.square {
+  width: 100px;
+  height: 100px;
+  background: var(--color-b1);
+}
+
 @media screen and (max-width: 850px) {
   .home-left-section span {
     font-size: 18px;

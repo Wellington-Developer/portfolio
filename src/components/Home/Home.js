@@ -3,15 +3,21 @@ import imgIntro from '../../img/introducao.jpg'
 import './Home.css'
 
 import { useRef, useEffect } from 'react'
-import { gsap, Power2 } from 'gsap'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-export const Home = ({timeline}) => {
+export const Home = () => {
   let home = useRef(null)
 
   useEffect(() => {
-    gsap.fromTo(home.current, 1, {width: '0%', opacity: 0},
-      {width: '100%', opacity: 1, ease: Power2})
-  }, [timeline])
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.square', {
+      x: 1000,
+      duration: 1,
+      ScrollTrigger: ".square"
+    })
+  }, [])
 
   return (
     <section>
@@ -24,10 +30,12 @@ export const Home = ({timeline}) => {
             <Button text={"CONTATE-ME"}/>
           </div>
           <div className="home-right-section">
-            <img src={imgIntro} alt="Imagem de código" ref={home}/>
+            <img src={imgIntro} alt="Imagem de código"/>
           </div>
         </div>
       </div>
+
+      <div className="square" ref={home}></div>
     </section>
   )
 }
