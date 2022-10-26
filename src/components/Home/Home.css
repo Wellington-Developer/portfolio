@@ -5,13 +5,15 @@
 .home-container {
   background: var(--color-c12);
   padding: 40px 20px;
+  overflow-y: hidden;
 }
 
 .home-content {
-  max-width: 1220px;
+  max-width: 1420px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home-left-section, .home-right-section {
@@ -39,7 +41,9 @@
 }
 
 .home-right-section {
-  max-width: 600px;
+  max-width: 900px;
+  display: flex;
+  align-items: center;
 }
 
 .home-right-section img {
@@ -54,6 +58,53 @@
   max-width: 600px;
   opacity: 0;
   color: black;
+}
+
+.perspective {
+  perspective: 7000px;
+
+  animation: perspective 5s ease infinite alternate;
+}
+
+@keyframes perspective {
+  0% {
+    perspective: 400px;
+  }
+  50% {
+    perspective: 700px;
+  }
+  100% {
+    perspective: 600px;
+  }
+}
+
+.card {
+  width: 430px;
+  height: 265px;
+
+  background-image: url("../../img/id-card.svg");
+  background-size: cover;
+
+  transform-origin: center center;
+  transform-style: preserve-3d;
+
+  transform: rotateY(-30deg) rotateX(10deg);
+
+  background-color: transparent;
+
+  animation: card 5s ease infinite alternate;
+}
+
+@keyframes card {
+  0% {
+    transform: rotateY(10deg) rotateX(3deg) rotate(0deg);
+  }
+  50% {
+    transform: rotateY(40deg) rotateX(-15deg) rotate(10deg);
+  }
+  100% {
+    transform: rotateY(-40deg) rotateX(15deg) rotate(-10deg);
+  }
 }
 
 @media screen and (max-width: 850px) {

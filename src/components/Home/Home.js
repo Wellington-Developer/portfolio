@@ -1,5 +1,4 @@
 import { Button } from "../utilidades/Button"
-import imgIntro from '../../img/introducao.jpg'
 import './Home.css'
 
 export const Home = () => {
@@ -15,7 +14,9 @@ export const Home = () => {
             <Button text={"CONTATE-ME"}/>
           </div>
           <div className="home-right-section">
-            <img src={imgIntro} alt="Imagem de código"/>
+          <div class="perspective">
+            <div class="card"></div>
+          </div>
           </div>
         </div>
       </div>
