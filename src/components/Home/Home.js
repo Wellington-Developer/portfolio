@@ -11,7 +11,7 @@ export const Home = () => {
             <span className="font-2-l">Eae 🤘🏻</span>
             <h1 className="font-1-xxl">Front-End Developer & UI Designer<span id="dot">.</span></h1>
             <p className="font-2-l">Desenvolvo Interfaces para produtos digitais que conectam pessoas e empresas</p>
-            <Button text={"CONTATE-ME"}/>
+            <Button text={"CONTATE-ME"} link="https://www.linkedin.com/in/wellington-santos-6a2670214/"/>
           </div>
           <div className="home-right-section">
           <div class="perspective">

@@ -1,9 +1,9 @@
 import './Button.css'
 
-export const Button = ({text}) => {
+export const Button = ({text, link}) => {
   return (
-    <button className="default-button">
+    <a href={link} className="default-button">
       {text}
-    </button>
+    </a>
   )
 }
