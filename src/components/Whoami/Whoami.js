@@ -16,7 +16,7 @@ export const Whoami = () => {
           <ul>
             <li>
               <img src={imgCorrect} alt="correct"/>
-              5 Anos de experiência com Desenvolvimento Front-End
+              7 Anos de experiência com Desenvolvimento Front-End
             </li>
             <li>
               <img src={imgCorrect} alt="correct"/>
